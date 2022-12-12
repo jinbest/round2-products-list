@@ -1,0 +1,111 @@
+.looking-for-card {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: -14.2286px -14.2286px 42.6857px #ffffff,
+    14.2286px 14.2286px 42.6857px rgba(174, 174, 192, 0.4);
+  border-radius: 14.2286px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  @media (max-width: 1200px) {
+    padding: 30px;
+  }
+  @media (max-width: 960px) {
+    padding: 20px;
+  }
+  @media (max-width: 600px) {
+    padding: 20px 10px;
+  }
+  @media (max-width: 360px) {
+    padding: 10px;
+  }
+  @media (max-width: 768px) and (min-width: 425px) {
+    flex-direction: column;
+    & > div p {
+      text-align: center;
+    }
+    .looking-for-title {
+      margin-top: 10px;
+    }
+  }
+  img {
+    width: 250px;
+    @media (max-width: 1200px) {
+      width: 180px;
+    }
+    @media (max-width: 1200px) {
+      width: 160px;
+    }
+    @media (max-width: 600px) {
+      width: 130px;
+    }
+    @media (max-width: 360px) {
+      width: 100px;
+    }
+  }
+  .looking-for-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    padding-bottom: 20px;
+    @media (max-width: 1200px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    @media (max-width: 960px) {
+      font-size: 20px;
+      line-height: 24px;
+      padding-bottom: 10px;
+    }
+    @media (max-width: 600px) {
+      font-size: 17px;
+      line-height: 20px;
+    }
+    @media (max-width: 360px) {
+      padding-bottom: 5px;
+    }
+  }
+  .looking-for-content {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 28px;
+    color: #000000;
+    @media (max-width: 1200px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    @media (max-width: 960px) {
+      font-size: 15px;
+      line-height: 20px;
+    }
+    @media (max-width: 600px) {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+}
+
+.looking-for-vertical {
+  @media (min-width: 425px) {
+    flex-direction: column;
+    & > div p {
+      text-align: center;
+    }
+    .looking-for-title {
+      margin-top: 20px;
+      @media (max-width: 768px) {
+        margin-top: 10px;
+      }
+    }
+  }
+  @media (max-width: 425px) {
+    & > div {
+      margin-left: 10px;
+    }
+  }
+}

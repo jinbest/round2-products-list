@@ -1,0 +1,104 @@
+.shop-cart {
+  padding: 20px 0;
+  width: 100%;
+  .empty-cart {
+    text-align: center;
+    p {
+      font-size: 20px;
+      font-weight: 600;
+      padding: 20px 0;
+    }
+    button {
+      background: $main-blue;
+      border: none;
+      outline: none;
+      height: 30px;
+      width: 290px;
+      color: white;
+      font-size: 18px;
+      border-radius: 15px;
+      margin: 20px 0;
+    }
+  }
+  .shop-carts-container {
+    width: 100%;
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      padding: 10px 0;
+      text-align: center;
+      font-family: "Montserrat Bold";
+    }
+    & > div {
+      padding: 0 15px;
+      width: 100%;
+      & > div {
+        display: flex;
+        width: 100%;
+        padding: 20px 0;
+        border-bottom: 1px solid #bdbfc3;
+        img {
+          width: 70px;
+          height: fit-content;
+        }
+        & > div {
+          width: calc(100% - 75px);
+          padding-left: 10px;
+          & > div {
+            display: flex;
+            justify-content: space-between;
+            p {
+              font-size: 16px;
+              line-height: 24px;
+            }
+            .shop-cart-remove-btn {
+              font-size: 10px;
+              text-decoration: underline;
+              line-height: 22px;
+              cursor: pointer;
+              &:hover {
+                opacity: 0.7;
+              }
+            }
+          }
+        }
+      }
+    }
+    .shop-carts-main {
+      max-height: 570px;
+      overflow-y: scroll;
+      padding: 5px 15px;
+    }
+    .check-button {
+      text-align: center;
+      button {
+        background: $main-blue;
+        border: none;
+        outline: none;
+        height: 30px;
+        width: 270px;
+        color: white;
+        font-size: 18px;
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+.shop-cart-badge {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: $main-blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: -8px;
+  z-index: 10;
+  p {
+    font-size: 10px;
+    color: white;
+  }
+}

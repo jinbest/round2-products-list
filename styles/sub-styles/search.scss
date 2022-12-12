@@ -1,0 +1,25 @@
+.search {
+  width: 100%;
+  height: 40px;
+  max-width: 943px;
+  border: 1px solid $grey-2;
+  background: $grey-1;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin: auto;
+  input {
+    outline: none;
+    background: transparent;
+    color: black;
+    border: none;
+    flex-grow: 1;
+    height: 100%;
+  }
+  img {
+    width: 18px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+}

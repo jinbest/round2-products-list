@@ -1,0 +1,694 @@
+{
+  "headerData": {
+    "title": "Round2 Products List",
+    "description": "Round2 Products List Website",
+    "favicon": "/img/head/favicon.ico",
+    "navData": {
+      "primary": {
+        "logo": "/img/head/logo.png",
+        "nav": [
+          {
+            "name": "Service",
+            "link": "/service"
+          },
+          {
+            "name": "Insure",
+            "link": "/insure"
+          },
+          {
+            "name": "Plans",
+            "link": "/plans"
+          },
+          {
+            "name": "Finance",
+            "link": "/finance"
+          },
+          {
+            "name": "Corporate",
+            "link": "/corporate"
+          }
+        ]
+      },
+      "secondary": [
+        "Flash Sale!",
+        "iPhone",
+        "MacBook",
+        "iPhone XR",
+        "iPhone 11",
+        "iPad",
+        "iMac",
+        "iPhone 8",
+        "Laptops",
+        "Monitors",
+        "Tablet",
+        "Audio",
+        "Gaming Laptop",
+        "Samsung Galaxy",
+        "iPhone 12"
+      ]
+    }
+  },
+  "footer": {
+    "companyName": "Canada’s mobile device marketplace",
+    "phoneNumber": "(204) 221-5898",
+    "email": "sales@devicelist.ca",
+    "address": "2020 Corydon Ave, Unit F Winnipeg, MB",
+    "reserved": "© 2020 DeviceList 1.0.2. All Rights Reserved.",
+    "copyright": "All trademarks are properties of their respective holders. 11253913 Canada Inc. o/a \"DeviceList\" does not own or make claim to those trademarks used on this website in which it is not the holder.",
+    "linkData": [
+      {
+        "title": "About",
+        "order": 1,
+        "visible": true,
+        "child": [
+          {
+            "name": "Who We Are?",
+            "link": "#",
+            "order": 1,
+            "visible": true
+          },
+          {
+            "name": "Financing",
+            "link": "#",
+            "order": 2,
+            "visible": true
+          },
+          {
+            "name": "Blog",
+            "link": "#",
+            "order": 3,
+            "visible": true
+          },
+          {
+            "name": "Trems of Service",
+            "link": "#",
+            "order": 4,
+            "visible": true
+          }
+        ]
+      },
+      {
+        "title": "Resources",
+        "order": 2,
+        "visible": true,
+        "child": [
+          {
+            "name": "Contact Us",
+            "link": "#",
+            "order": 1,
+            "visible": true
+          },
+          {
+            "name": "Warranty & Returns",
+            "link": "#",
+            "order": 2,
+            "visible": true
+          },
+          {
+            "name": "Shipping",
+            "link": "#",
+            "order": 3,
+            "visible": true
+          },
+          {
+            "name": "FAQs",
+            "link": "#",
+            "order": 4,
+            "visible": true
+          }
+        ]
+      },
+      {
+        "title": "Business",
+        "order": 3,
+        "visible": true,
+        "child": [
+          {
+            "name": "Authorized Dealer Program",
+            "link": "#",
+            "order": 1,
+            "visible": true
+          },
+          {
+            "name": "Sell With Us",
+            "link": "#",
+            "order": 2,
+            "visible": true
+          },
+          {
+            "name": "Find a Location",
+            "link": "#",
+            "order": 3,
+            "visible": true
+          },
+          {
+            "name": "Business Solutions",
+            "link": "#",
+            "order": 4,
+            "visible": true
+          }
+        ]
+      },
+      {
+        "title": "Quality",
+        "order": 4,
+        "visible": true,
+        "child": [
+          {
+            "name": "Device Grading",
+            "link": "#",
+            "order": 1,
+            "visible": true
+          },
+          {
+            "name": "Quality Control",
+            "link": "#",
+            "order": 2,
+            "visible": true
+          },
+          {
+            "name": "60 Point Quality Check",
+            "link": "#",
+            "order": 3,
+            "visible": true
+          },
+          {
+            "name": "What is PhoneCheck?",
+            "link": "#",
+            "order": 4,
+            "visible": true
+          }
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "img_src": "/img/payments/flexiti.png",
+        "visible": true,
+        "order": 1
+      },
+      {
+        "img_src": "/img/payments/visa.png",
+        "visible": true,
+        "order": 2
+      },
+      {
+        "img_src": "/img/payments/paypal.png",
+        "visible": true,
+        "order": 3
+      },
+      {
+        "img_src": "/img/payments/mc.png",
+        "visible": true,
+        "order": 4
+      },
+      {
+        "img_src": "/img/payments/amex.png",
+        "visible": true,
+        "order": 5
+      },
+      {
+        "img_src": "/img/payments/interac.png",
+        "visible": true,
+        "order": 6
+      }
+    ],
+    "socials": [
+      {
+        "img_src": "/img/socials/instagram.png",
+        "link": "#",
+        "order": 1,
+        "visible": true
+      },
+      {
+        "img_src": "/img/socials/twitter.png",
+        "link": "#",
+        "order": 2,
+        "visible": true
+      },
+      {
+        "img_src": "/img/socials/linkedin.png",
+        "link": "#",
+        "order": 3,
+        "visible": true
+      },
+      {
+        "img_src": "/img/socials/facebook.png",
+        "link": "#",
+        "order": 4,
+        "visible": true
+      }
+    ]
+  },
+  "megaData": {
+    "contents": [
+      {
+        "text": "Become an Authorized Dealer",
+        "link": "/shop"
+      },
+      {
+        "text": "Our quality Standards",
+        "link": "/shop"
+      },
+      {
+        "text": "Customer Reviews",
+        "link": "/shop"
+      }
+    ],
+    "data": [
+      {
+        "name": "Phones",
+        "banner": {
+          "title": "Cellphones",
+          "content": "New or refurbished, you'll find your fit.",
+          "logo": "/img/mega/phones.png",
+          "bgCol": "#CBBBFA"
+        },
+        "child": [
+          {
+            "name": "iPhone",
+            "data": [
+              "All iPhones",
+              "iPhone XS",
+              "iPhone 6",
+              "Latest iPhones",
+              "iPhone XS Max",
+              "iPhone 6 Plus",
+              "Unlocked iPhones",
+              "iPhone X",
+              "iPhone 5C",
+              "iPhone 12",
+              "iPhone 8",
+              "iPhone 5s",
+              "iPhone 12 Mini",
+              "iPhone 8 Plus",
+              "iPhone 5",
+              "iPhone SE (2020)",
+              "iPhone 7",
+              "iPhone 4s",
+              "iPhone 11",
+              "iPhone 7 Plus",
+              "iPhone under $200",
+              "iPhone 11 Pro",
+              "iPhone SE",
+              "iPhone cases",
+              "iPhone 11 Pro Max",
+              "iPhone 6s",
+              "iPhone XR",
+              "iPhone 6s Plus"
+            ]
+          },
+          {
+            "name": "Samsung",
+            "data": [
+              "All Galaxy",
+              "Galaxy S8",
+              "Galaxy S4",
+              "Galaxy Z Flip",
+              "Galaxy S8+",
+              "Galaxy Note10",
+              "Galaxy S20",
+              "Galaxy S8 Active",
+              "Galaxy Note 10+",
+              "Galaxy S20+",
+              "Galaxy S7",
+              "Galaxy Note9",
+              "Galaxy S20 Ultra",
+              "Galaxy S7 Edge",
+              "Galaxy Note8",
+              "Galaxy S10",
+              "Galaxy S6",
+              "Galaxy Note5",
+              "Galaxy S10+",
+              "Galaxy S6 Edge",
+              "Galaxy Note4",
+              "Galaxy S10e",
+              "Galaxy S6 Active",
+              "Galaxy J7"
+            ]
+          },
+          {
+            "name": "Google",
+            "data": [
+              "All Pixel",
+              "Pixel 3",
+              "Pixel 2XL",
+              "Pixel 4XL",
+              "Pixel 3XL",
+              "Pixel",
+              "Pixel 4",
+              "Pixel 3a XL",
+              "Pixel XL",
+              "Pixel 3a",
+              "Pixel 2",
+              ""
+            ]
+          },
+          {
+            "name": "LG",
+            "data": [
+              "All LG",
+              "LG Stylo 5",
+              "LG G Stylo",
+              "LG G8 ThinQ",
+              "LG V20",
+              "LG K30",
+              "LG G7 ThinQ",
+              "LG G6",
+              "LGNexus 5X",
+              "LG V40 ThinQ",
+              "LG G5",
+              ""
+            ]
+          }
+        ],
+        "split": 3
+      },
+      {
+        "name": "Computers",
+        "banner": {
+          "title": "Computers",
+          "content": "New or refurbished, you'll find your fit.",
+          "logo": "/img/mega/computers.png",
+          "bgCol": "#A0E744"
+        },
+        "child": [
+          {
+            "name": "MacBook",
+            "data": [
+              "All MacBook",
+              "MacBook",
+              "MacBook Pro",
+              "MacBook Retina",
+              "MacBook Air",
+              "MacBook under $400"
+            ]
+          },
+          {
+            "name": "PC Laptop",
+            "data": [
+              "All Laptops",
+              "Lenovo",
+              "Samsung",
+              "Asus",
+              "Dell",
+              "Microsoft",
+              "HP",
+              "2 in 1",
+              "Acer",
+              "Toshiba"
+            ]
+          },
+          {
+            "name": "ChromeBook",
+            "data": [
+              "All ChromeBooks",
+              "Lenovo",
+              "Samsung",
+              "Asus",
+              "Dell",
+              "Microsoft",
+              "HP",
+              "2 in 1",
+              "Acer",
+              "Toshiba"
+            ]
+          },
+          {
+            "name": "Desktop",
+            "data": [
+              "All Desktop Computers",
+              "Mac Pro",
+              "Apple",
+              "Acer",
+              "PC",
+              "Dell",
+              "All-in-one",
+              "HP",
+              "iMac",
+              "Lenovo",
+              "Mac mini"
+            ]
+          },
+          {
+            "name": "Monitors",
+            "data": ["All Monitors", "Dell", "Acer", "HP", "Samsung", "Lenovo", "LG"]
+          }
+        ],
+        "split": 2
+      },
+      {
+        "name": "Tablets",
+        "banner": {
+          "title": "Tablets",
+          "content": "New or refurbished, you'll find your fit.",
+          "logo": "/img/mega/tablets.png",
+          "bgCol": "#4360FA"
+        },
+        "child": [
+          {
+            "name": "iPad",
+            "data": [
+              "All iPad",
+              "iPad Air 3",
+              "iPad 4",
+              "iPad Pro",
+              "iPad Air 2",
+              "iPad 3",
+              "iPad Mini 5",
+              "iPad Air",
+              "iPad 2",
+              "iPad Mini 4",
+              "iPad 7",
+              "",
+              "iPad Mini 3",
+              "iPad 6",
+              "",
+              "iPad Mini 2",
+              "iPad 5",
+              ""
+            ]
+          },
+          {
+            "name": "Samsung",
+            "data": [
+              "All Galaxy Tab",
+              "Galaxy Tab S6",
+              "Galaxy Tab A",
+              "Galaxy Tab 4",
+              "Galaxy Tab S5e",
+              "Galaxy Tab E",
+              "Galaxy Tab 3",
+              "Galaxy Tab S4",
+              "",
+              "Galaxy Tab 2",
+              "Galaxy Tab S2",
+              ""
+            ]
+          },
+          {
+            "name": "Microsoft",
+            "data": ["All Surface", "Surface 3", "Surface Pro 3", "Surface Go", "Surface Pro 4", ""]
+          },
+          {
+            "name": "Asus",
+            "data": ["All Asus", "", "", "MeMo Pad FhD"]
+          },
+          {
+            "name": "Lenovo",
+            "data": [
+              "All Lenovo",
+              "Smart Tab M8",
+              "IdeaPad Duet",
+              "Smart Tab M10",
+              "Tab M7",
+              "Yoga Smart Tab",
+              "Smart Tab P11",
+              "Tab MB",
+              "P10"
+            ]
+          },
+          {
+            "name": "E-Book",
+            "data": ["All E-Book", "Kobo", "", "Amazon Kindle"]
+          }
+        ],
+        "split": 3
+      },
+      {
+        "name": "Gaming",
+        "banner": {
+          "title": "Gaming",
+          "content": "New or refurbished, you'll find your fit.",
+          "logo": "/img/mega/gaming.png",
+          "bgCol": "#FC6530"
+        },
+        "child": [
+          {
+            "name": "Consoles",
+            "data": ["PlayStation", "Other", "Xbox", "Nintendo"]
+          }
+        ],
+        "split": 2
+      },
+      {
+        "name": "Wearables",
+        "banner": {
+          "title": "Wearables",
+          "content": "New or refurbished, you'll find your fit.",
+          "logo": "/img/mega/wearables.png",
+          "bgCol": "#CBBBFA"
+        },
+        "child": [
+          {
+            "name": "Apple Watch",
+            "data": [
+              "All Apple Watches",
+              "Series 3",
+              "Series 5",
+              "Series 2",
+              "Series 4",
+              "Series 1"
+            ]
+          },
+          {
+            "name": "Fitbit",
+            "data": [
+              "All Fitbit",
+              "Fitbit Charge 2",
+              "Fitbit Versa",
+              "Fitbit Ionic",
+              "Fitbit Surge"
+            ]
+          },
+          {
+            "name": "Garmin",
+            "data": ["All Garmin", "Vivosmart", "Forerunner", "Fenix", "Vivoactive"]
+          },
+          {
+            "name": "Samsung",
+            "data": ["All Samsung", "Galaxy Gear", "Galaxy Active2"]
+          }
+        ],
+        "split": 2
+      },
+      {
+        "name": "Audio",
+        "banner": {
+          "title": "Audio",
+          "content": "New or refurbished, you'll find your fit.",
+          "logo": "/img/mega/audio.png",
+          "bgCol": "#A0E744"
+        },
+        "child": [
+          {
+            "name": "Headphones",
+            "data": [
+              "All Headphones",
+              "LG",
+              "Wireless Headphones",
+              "Jabra",
+              "Sennheiser",
+              "JBL",
+              "Betas by Dre",
+              "Sony",
+              "Plantronics"
+            ]
+          },
+          {
+            "name": "Earphones",
+            "data": [
+              "All Earphones",
+              "Jabra",
+              "Wireless Earphones",
+              "Plantronics",
+              "Apple AirPods",
+              "Woozik",
+              "Beats by Dre",
+              "Bose",
+              "Samsung",
+              "Sony"
+            ]
+          },
+          {
+            "name": "MP3 & MP4 Players",
+            "data": ["MP3 & MP4 Players", "iPod Nano", "iPod Touch", "SanDisk MP3 Player"]
+          }
+        ],
+        "split": 2
+      },
+      {
+        "name": "Smart Home",
+        "banner": {
+          "title": "Smart Home",
+          "content": "New or refurbished, you'll find your fit.",
+          "logo": "/img/mega/smart-home.png",
+          "bgCol": "#4360FA"
+        },
+        "child": [
+          {
+            "name": "Speakers & Displays",
+            "data": ["All Speakers & Displays", "Amazon", "Google", "Sonos One", "Apple"]
+          },
+          {
+            "name": "Streaming",
+            "data": ["All Streaming", "Roku", "ChromeCast", "Apple"]
+          },
+          {
+            "name": "Safety & Security",
+            "data": [
+              "All Safety & Security",
+              "SimpliSafe",
+              "Google",
+              "Vivint Smart Home",
+              "Ring",
+              "",
+              "Arlo"
+            ]
+          },
+          {
+            "name": "Around the Home",
+            "data": [
+              "All Home Gadgets",
+              "Appliances",
+              "Lightbulbs",
+              "Vaccums",
+              "Plugs",
+              "",
+              "Thermostats"
+            ]
+          }
+        ],
+        "split": 2
+      },
+      {
+        "name": "Accessories",
+        "banner": {
+          "title": "Accessories",
+          "content": "New or refurbished, you'll find your fit.",
+          "logo": "/img/mega/accessories.png",
+          "bgCol": "#FC6530"
+        },
+        "child": [
+          {
+            "name": "Computer",
+            "data": ["All Computer Accessories", "Cables", "Mouse & Keyboard", "", "Speakers"]
+          },
+          {
+            "name": "Tablet",
+            "data": ["All Tablet Accessories", "Stylus & Pens", "Cases", "", "Screen Protectors"]
+          },
+          {
+            "name": "Phone",
+            "data": ["All Phone Accessories", "Chargers", "Cases", "", "Screen Protectors"]
+          },
+          {
+            "name": "Gaming",
+            "data": ["All Gaming Accessories", "Chargers", "Cases", "Adapters", "Controllers"]
+          }
+        ],
+        "split": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,515 @@
+.checkout {
+  width: 100%;
+  .container {
+    width: calc(100% - 50px);
+    max-width: 1440px;
+    margin: auto;
+    padding: 30px 0;
+  }
+  .empty-checkout-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 130px;
+    p {
+      padding: 25px 0;
+      font-size: 18px;
+      font-family: "Montserrat Bold";
+      line-height: 27px;
+      text-align: center;
+    }
+    button {
+      width: 127px;
+      height: 59px;
+      background: $main-blue;
+      outline: none;
+      border: none;
+      color: white;
+      font-size: 18px;
+      font-family: "Montserrat";
+      line-height: 27px;
+      border-radius: 30px;
+    }
+  }
+  .checkout-main-container {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 25px;
+    display: flex;
+    @media (max-width: 960px) {
+      flex-wrap: wrap;
+    }
+    .box-cart {
+      background: #ffffff;
+      box-shadow: -10px -10px 30px #ffffff, 10px 10px 30px rgba(174, 174, 192, 0.4);
+      border-radius: 10px;
+      width: 100%;
+      height: fit-content;
+    }
+    .left-side {
+      width: calc(100% - 420px);
+      .left-product-container {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 15px;
+        .product-profile {
+          display: flex;
+          width: 100%;
+          padding: 20px 0;
+          img {
+            width: 70px;
+            height: fit-content;
+          }
+          & > div {
+            width: calc(100% - 75px);
+            padding-left: 10px;
+            & > div {
+              display: flex;
+              justify-content: space-between;
+              p {
+                font-size: 16px;
+                line-height: 24px;
+              }
+              .shop-cart-remove-btn {
+                font-size: 10px;
+                text-decoration: underline;
+                line-height: 22px;
+                cursor: pointer;
+                &:hover {
+                  opacity: 0.7;
+                }
+              }
+            }
+          }
+        }
+        .add-ons {
+          h3 {
+            font-size: 16px;
+            font-family: "Montserrat Bold";
+            line-height: 20px;
+          }
+          & > div {
+            margin: 8px 0;
+            width: 100%;
+            border: 2px solid #bdbfc3;
+            height: 39px;
+            width: 100%;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            cursor: pointer;
+            &:hover {
+              opacity: 0.7;
+            }
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .left-side-shipping {
+        width: 100%;
+        padding: 15px;
+        margin: 0;
+        .shipping-form-submit {
+          margin-top: 15px;
+          display: flex;
+          align-items: center;
+          button {
+            width: fit-content;
+            padding: 0 20px;
+            min-width: 120px;
+            height: 28px;
+            background: $main-blue;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 14px;
+            font-family: "Montserrat";
+            border-radius: 20px;
+            margin-right: 20px;
+            span > div {
+              margin-top: -22px;
+            }
+          }
+          p {
+            font-size: 14px;
+            color: #bdbfc3;
+            @media (max-width: 500px) {
+              display: none;
+            }
+          }
+        }
+        .registered-address-label {
+          padding: 10px 0;
+          font-size: 12px;
+        }
+        .confirm-address-form {
+          margin: 15px 0;
+          border: 1px solid #bdbfc3;
+          position: relative;
+          padding: 10px;
+          p {
+            font-size: 16px;
+            line-height: 24px;
+            svg {
+              width: 20px;
+              height: 20px;
+              margin-top: 8px;
+              margin-right: 10px;
+            }
+          }
+          .change-address {
+            font-size: 12px;
+            cursor: pointer;
+            position: absolute;
+            top: 0px;
+            right: 10px;
+            &:hover {
+              opacity: 0.7;
+            }
+            svg {
+              margin-left: 5px;
+            }
+          }
+        }
+        .MuiGrid-container {
+          padding: 8px 0;
+        }
+        .MuiGrid-item {
+          padding: 0 6px;
+        }
+        .customize-radio-group {
+          margin-top: 15px;
+          margin-left: -10px;
+          & > div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .radio-span {
+              display: flex;
+              align-items: center;
+              img {
+                margin-right: 10px;
+              }
+            }
+            & > p {
+              font-size: 14px;
+              font-weight: 600;
+              font-family: "Montserrat";
+            }
+            .progree-payment-logos {
+              @media (max-width: 500px) {
+                display: none;
+              }
+            }
+          }
+          .MuiFormControlLabel-root {
+            padding: 0 10px;
+            height: 35px;
+            .MuiRadio-colorSecondary.Mui-checked,
+            .MuiRadio-root {
+              color: $main-blue;
+            }
+            .MuiTypography-root {
+              font-size: 14px;
+            }
+          }
+        }
+        .radio-select-location,
+        .radio-select-payment-form {
+          border-top: 1px solid #bdbfc3;
+          padding: 15px;
+          & > p {
+            font-size: 14px;
+            font-family: "Montserrat Bold";
+          }
+        }
+        .promo-code-form {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          margin-top: 20px;
+          .promo-input {
+            width: calc(100% - 180px);
+          }
+          .shipping-form-submit {
+            width: 165px;
+            margin-top: 0;
+            button {
+              width: 165px;
+              height: 40px;
+              margin-right: 0;
+            }
+          }
+          @media (max-width: 960px) {
+            flex-direction: column;
+            justify-content: center;
+            .promo-input {
+              width: 100%;
+            }
+            .shipping-form-submit {
+              width: 100%;
+              margin-top: 10px;
+              text-align: center;
+              button {
+                margin: auto;
+              }
+            }
+          }
+        }
+      }
+      .progress-payment-logos {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 35px;
+        height: auto;
+        background: #f5f5f5;
+        border-radius: 10px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        & > div {
+          margin: 8px auto;
+          display: flex;
+          align-items: center;
+          p {
+            font-size: 12px;
+            font-weight: 600;
+            font-family: "Montserrat";
+            margin-left: 10px;
+            width: 150px;
+            line-height: 16px;
+          }
+        }
+      }
+      @media (max-width: 960px) {
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+      }
+    }
+    .right-side {
+      width: 400px;
+      .checkout-component {
+        padding: 15px;
+        & > div {
+          width: 100%;
+          padding: 10px 0;
+          border-bottom: 1px solid #bdbfc3;
+          & > div {
+            display: flex;
+            justify-content: space-between;
+            p {
+              font-size: 16px;
+              line-height: 24px;
+            }
+            .shop-cart-remove-btn {
+              font-size: 10px;
+              text-decoration: underline;
+              line-height: 22px;
+              cursor: pointer;
+              &:hover {
+                opacity: 0.7;
+              }
+            }
+          }
+        }
+        .check-button {
+          text-align: center;
+          button {
+            background: $main-blue;
+            border: none;
+            outline: none;
+            height: 30px;
+            width: 270px;
+            color: white;
+            font-size: 18px;
+            border-radius: 15px;
+          }
+        }
+      }
+      .checkout-confirm-address {
+        margin: 15px 0;
+        padding: 15px;
+        & > div {
+          padding: 10px 0;
+          position: relative;
+          h2 {
+            font-size: 18px;
+            font-family: "Montserrat Bold";
+            line-height: 28px;
+            text-align: center;
+            padding-bottom: 15px;
+          }
+          p {
+            font-size: 16px;
+            line-height: 24px;
+            svg {
+              width: 20px;
+              height: 20px;
+              margin-top: 8px;
+              margin-right: 10px;
+            }
+          }
+          .change-address-button {
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            &:hover {
+              opacity: 0.7;
+            }
+            svg {
+              margin-left: 5px;
+            }
+          }
+        }
+        .bottom-bordered {
+          border-bottom: 1px solid #bdbfc3;
+        }
+      }
+      .review-payment-method {
+        margin: 15px 0;
+        padding: 15px;
+        h2 {
+          font-size: 16px;
+          font-family: "Montserrat Bold";
+          line-height: 28px;
+          padding-bottom: 10px;
+        }
+        & > div {
+          display: flex;
+          flex-wrap: wrap;
+          p {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+      .place-order {
+        width: 100%;
+        height: 45px;
+        background: $main-blue;
+        border-radius: 25px;
+        color: white;
+        outline: none;
+        border: none;
+        font-size: 16px;
+      }
+      @media (max-width: 960px) {
+        width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
+      }
+    }
+    .checkout-confirmation {
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 50px;
+      @media (max-width: 960px) {
+        padding-top: 20px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 27px;
+        font-family: "Montserrat Bold";
+        text-align: center;
+        span > a {
+          margin-left: 5px;
+          color: $main-blue;
+          text-decoration: underline;
+          font-family: "Montserrat Bold";
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.checkout-progress-bar {
+  width: calc(100% - 50px);
+  max-width: 1386px;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  .liner-custom-progress {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  .circular-custom-progress {
+    display: none;
+    max-width: 150px;
+    @media (max-width: 768px) {
+      display: block;
+      margin: auto;
+    }
+  }
+  .progress-label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px 5px 50px;
+    @media (max-width: 768px) {
+      display: none;
+    }
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 600;
+    }
+  }
+}
+
+.shipping-form-control {
+  .MuiInputBase-root {
+    font-size: 13px;
+    fieldset {
+      border: none;
+    }
+  }
+  .MuiOutlinedInput-inputMarginDense {
+    padding: 0 20px;
+    height: 100%;
+  }
+  .MuiOutlinedInput-root {
+    border-radius: 20px;
+    border: 1px solid #bdbfc3;
+    height: 40px;
+  }
+  .MuiSelect-root {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    &:focus {
+      border-radius: 20px;
+    }
+  }
+}
+
+.custom-form-control {
+  padding: 10px;
+  .MuiTypography-root {
+    font-size: 12px;
+  }
+  .MuiSvgIcon-root {
+    width: 15px;
+    height: 15px;
+  }
+  .MuiCheckbox-colorPrimary.Mui-checked {
+    color: $main-blue;
+  }
+}

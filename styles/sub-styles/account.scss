@@ -1,0 +1,561 @@
+.my-account {
+  width: 100%;
+  position: relative;
+  .container {
+    width: calc(100% - 50px);
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    padding-top: 25px;
+    justify-content: space-between;
+    align-items: center;
+    & > div {
+      height: auto;
+      min-height: calc(100vh - 290px);
+      box-shadow: -14.0556px -14.0556px 42.1667px #ffffff,
+        14.0556px 14.0556px 42.1667px rgba(174, 174, 192, 0.4);
+      border-radius: 10px;
+    }
+    .account-menu-bar {
+      width: 300px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-weight: normal;
+      position: relative;
+      @media (max-width: 1200px) {
+        width: 270px;
+      }
+      @media (max-width: 960px) {
+        width: 210px;
+      }
+      @media (max-width: 620px) {
+        width: 250px;
+        border-radius: 10px 0 10px 10px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 28px;
+        padding: 10px 0;
+        cursor: pointer;
+        color: $grey-3;
+        &:hover {
+          opacity: 0.7;
+        }
+        @media (max-width: 960px) {
+          font-size: 16px;
+        }
+      }
+    }
+    .account-details {
+      width: calc(100% - 340px);
+      padding: 20px;
+      position: relative;
+      @media (max-width: 1200px) {
+        width: calc(100% - 290px);
+      }
+      @media (max-width: 960px) {
+        width: calc(100% - 230px);
+      }
+      @media (max-width: 620px) {
+        width: 100%;
+      }
+      .details-title {
+        font-size: 28px;
+        font-family: "Montserrat Bold";
+        font-weight: bold;
+        line-height: 34px;
+        padding: 5px 0;
+        @media (max-width: 960px) {
+          font-size: 20px;
+        }
+      }
+      .details-content {
+        font-size: 16px;
+        line-height: 20px;
+        color: $grey-3;
+        padding: 5px 0;
+        margin-top: 10px;
+        @media (max-width: 960px) {
+          margin-top: 0px;
+        }
+      }
+      .icon-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 55px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background: transparent;
+        img {
+          width: 100%;
+        }
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+      .delete-account {
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+        border: 1px solid $main-blue;
+        color: $main-blue;
+        height: 30px;
+        border-radius: 5px;
+        width: fit-content;
+        padding: 0 20px;
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 24px;
+        background: transparent;
+      }
+      .account-details-viewer {
+        height: fit-content;
+        max-height: 600px;
+        max-width: 470px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        &::-webkit-scrollbar {
+          width: 3px;
+          cursor: pointer;
+        }
+        &::-webkit-scrollbar-track {
+          background: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: #cbbbfa;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+          background: #cbbbfa;
+        }
+        .MuiFormControlLabel-root {
+          padding: 0 10px;
+          margin-top: 10px;
+          .MuiRadio-colorSecondary.Mui-checked {
+            color: black;
+          }
+          .radio-span {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 430px;
+            p {
+              font-size: 18px;
+              font-weight: 600;
+              font-family: "Montserrat";
+            }
+            @media (max-width: 800px) {
+              display: block;
+              & > div {
+                margin: 5px 0 !important;
+              }
+            }
+          }
+        }
+        .horizontal-liner {
+          width: 100%;
+          max-width: 460px;
+          height: 2px;
+          background: #d4dffc;
+        }
+        .connect-paypal {
+          margin-top: 20px;
+          img {
+            cursor: pointer;
+            &:hover {
+              opacity: 0.7;
+            }
+          }
+        }
+      }
+      .account-address {
+        margin: 10px 0;
+        max-width: 400px;
+        width: 100%;
+        .account-address-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          margin-top: 20px;
+          .MuiFormControlLabel-root {
+            margin: 0 !important;
+          }
+          p {
+            font-size: 20px;
+            font-weight: 600;
+            cursor: default;
+            @media (max-width: 960px) {
+              font-size: 16px;
+            }
+          }
+          div {
+            cursor: pointer;
+          }
+        }
+        .account-address-content {
+          margin: 20px 0 15px;
+          p {
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 22px;
+            @media (max-width: 960px) {
+              font-size: 16px;
+            }
+          }
+        }
+        .delete-address {
+          border: none;
+          background: transparent;
+          color: $grey-2;
+          text-decoration: underline;
+          padding: 0;
+          margin: 0;
+          font-size: 18px;
+          font-weight: normal;
+          font-family: "Montserrat";
+          @media (max-width: 960px) {
+            font-size: 16px;
+          }
+        }
+      }
+      .my-orders-row-data {
+        padding: 15px 0;
+        border-bottom: 2px solid #d4dffc;
+        width: 100%;
+        & > div {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          @media (max-width: 1000px) {
+            cursor: pointer;
+          }
+          .order-date {
+            width: 120px;
+          }
+          .order-no {
+            width: 120px;
+          }
+          .order-status {
+            width: 150px;
+          }
+          .order-arrow {
+            display: none;
+          }
+          .order-items {
+            width: calc(100% - 540px);
+          }
+          .order-buttons,
+          .order-buttons-mobile {
+            display: block;
+            width: 150px;
+            .my-order-filled-button {
+              background: $main-blue;
+              height: 30px;
+              width: 140px;
+              border: none;
+              border-radius: 5px;
+              color: white;
+              font-size: 14px;
+              line-height: 12px;
+              font-weight: 600;
+              margin: 5px;
+            }
+            .order-filled-disable {
+              background: #e1e1e1;
+              cursor: inherit;
+              &:hover {
+                opacity: 1;
+              }
+            }
+            .my-order-outline-button {
+              background: transparent;
+              height: 30px;
+              width: 140px;
+              border: 1px solid $main-blue;
+              border-radius: 5px;
+              color: $main-blue;
+              font-size: 14px;
+              line-height: 12px;
+              font-weight: 600;
+              margin: 5px;
+            }
+            .order-outline-disable {
+              border: 1px solid #e1e1e1;
+              color: #e1e1e1;
+              cursor: inherit;
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+          .order-title {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 28px;
+          }
+          .order-content {
+            font-size: 16px;
+            font-weight: normal;
+          }
+          @media (max-width: 1200px) {
+            .order-date,
+            .order-no {
+              width: 100px;
+            }
+            .order-status {
+              width: 120px;
+            }
+            .order-items {
+              width: calc(100% - 500px);
+            }
+          }
+          @media (max-width: 1000px) {
+            .order-items,
+            .order-buttons {
+              display: none;
+            }
+            .order-arrow {
+              display: block;
+            }
+          }
+          @media (max-width: 768px) {
+            .order-title,
+            .order-content {
+              font-size: 14px;
+            }
+          }
+        }
+        .mobile-orders-row {
+          display: none;
+          @media (max-width: 1000px) {
+            display: flex;
+            align-items: center;
+            margin-top: 10px !important;
+            cursor: inherit;
+            .order-items-mobile {
+              margin: auto 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .mobile-switcher-view {
+    top: 0;
+    width: 33px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    box-shadow: -14.0556px -14.0556px 42.1667px #ffffff,
+      14.0556px 14.0556px 42.1667px rgba(174, 174, 192, 0.4);
+  }
+}
+
+.my-details-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin-top: 15px;
+  .MuiFormControlLabel-root {
+    width: fit-content;
+    height: 30px;
+    @media (max-width: 600px) {
+      height: auto;
+    }
+    span {
+      font-size: 12px;
+      line-height: 15px;
+      color: $grey-3;
+      font-family: "Montserrat";
+      font-weight: normal;
+    }
+    a {
+      text-decoration: underline;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  .conference-checkbox {
+    padding: 20px 0;
+    span {
+      font-size: 18px !important;
+      font-weight: 600 !important;
+      font-family: "Montserrat";
+      color: black;
+    }
+    @media (max-width: 960px) {
+      padding: 0;
+      span {
+        font-size: 16px !important;
+      }
+    }
+  }
+  .my-details-label {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Montserrat";
+    font-weight: normal;
+    width: 100%;
+    font-weight: 600;
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+  .form-group {
+    width: 100%;
+    margin: 5px 0;
+    .MuiFormControl-marginDense {
+      margin: 0px;
+    }
+  }
+  .form-control {
+    .MuiInputBase-root {
+      font-size: 13px;
+      fieldset {
+        border: none;
+      }
+    }
+    .MuiOutlinedInput-inputMarginDense {
+      padding: 0 10px;
+      height: 100%;
+    }
+    .MuiOutlinedInput-root {
+      border-radius: 8px;
+      border: 2px solid #e1e1e1;
+    }
+    .MuiFormHelperText-marginDense {
+      margin-top: 0;
+    }
+    .MuiFormHelperText-contained {
+      margin: 0 10px;
+    }
+    .MuiInputAdornment-root {
+      span {
+        font-size: 14px;
+        color: $grey-2;
+        font-family: "Montserrat";
+        font-weight: bold;
+        cursor: pointer;
+        text-transform: uppercase;
+        @media (max-width: 600px) {
+          font-size: 12px;
+        }
+      }
+    }
+    .MuiSelect-root {
+      display: flex;
+      align-items: center;
+    }
+
+    input {
+      height: 10px;
+      font-size: 14px;
+      font-family: "Montserrat";
+    }
+
+    label {
+      font-size: 13px;
+    }
+
+    .MuiInputBase-formControl {
+      height: 50px;
+      margin-top: 0;
+    }
+  }
+}
+
+.my-account-modal {
+  width: calc(100% - 20px);
+  max-width: 745px;
+  max-height: calc(100vh - 20px);
+  border-radius: 10px;
+  margin: auto;
+  height: fit-content;
+  outline: none;
+  box-shadow: 0 4px 11px rgba(0, 0, 0, 0.35);
+  .my-account-modal-container {
+    width: 100%;
+    height: 100%;
+    min-height: 460px;
+    background: white;
+    border-radius: 10px;
+    outline: none;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .icon-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    h1 {
+      font-size: 28px;
+      line-height: 34px;
+      font-family: "Montserrat Bold";
+      color: black;
+      text-align: center;
+    }
+    .account-modal-content {
+      font-size: 16px;
+      line-height: 20px;
+      color: black;
+      text-align: center;
+    }
+    .filled-modal-button {
+      background: $main-blue;
+      height: 48px;
+      width: 180px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 600;
+      margin: 5px;
+    }
+    .outline-modal-button {
+      background: transparent;
+      height: 48px;
+      width: 180px;
+      border: 1px solid $main-blue;
+      border-radius: 5px;
+      color: $main-blue;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 600;
+      margin: 5px;
+    }
+    .cancel-modal-left-content {
+      padding-right: 30px;
+      border-right: 2px solid #d4dffc;
+      & > div {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.payment-logos {
+  cursor: default;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  img {
+    height: 25px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    margin-right: 4px;
+  }
+}

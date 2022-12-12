@@ -1,0 +1,444 @@
+.slider-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  height: 400px;
+  display: flex;
+  background: #cbbbfa;
+  align-items: center;
+  position: relative;
+  .banner-2-bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    @media (max-width: 1440px) {
+      width: 300px;
+    }
+    @media (max-width: 960px) {
+      width: 250px;
+    }
+    @media (max-width: 768px) {
+      width: 150px;
+    }
+    @media (max-width: 360px) {
+      width: 100px;
+    }
+  }
+  .slider-button {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 20px;
+    z-index: 1;
+    img {
+      width: 26px;
+      height: 45px;
+    }
+    @media (max-width: 960px) {
+      padding: 0 10px;
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  .swiper-container {
+    width: 100% !important;
+    height: 100%;
+  }
+  @media (max-width: 1440px) {
+    height: 375px;
+    .slider-button {
+      img {
+        width: 22px;
+        height: 37px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    height: 225px;
+    .slider-button {
+      img {
+        width: 13px;
+        height: 22px;
+      }
+    }
+  }
+  @media (max-width: 360px) {
+    height: 150px;
+    .slider-button {
+      img {
+        width: 6px;
+        height: 10px;
+      }
+    }
+  }
+}
+
+.slider-item-container {
+  width: 100%;
+  display: flex;
+  .slider-banner {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 960px) {
+      padding: 0 20px;
+    }
+    @media (max-width: 600px) {
+      padding: 0 5px;
+    }
+    .slider-contents {
+      width: calc(100% - 400px);
+      max-width: 650px;
+      .banner-2-slider-contents {
+        padding-left: 160px;
+      }
+      h1 {
+        font-size: 60px;
+        line-height: 72px;
+        color: white;
+        // font-family: "Zoom Pro";
+      }
+      p {
+        font-size: 32px;
+        line-height: 39px;
+        color: white;
+        margin-top: 20px;
+      }
+      button {
+        background: transparent;
+        border: 2px solid white;
+        border-radius: 8px;
+        outline: none;
+        font-size: 16px;
+        font-family: "Montserrat";
+        line-height: 20px;
+        margin-top: 30px;
+        width: 205px;
+        height: 50px;
+        color: white;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+    .slider-banner-img {
+      display: flex;
+      justify-content: flex-end;
+      height: 100%;
+      position: relative;
+      .banner-1-img {
+        position: absolute;
+        bottom: 0;
+        width: 380px;
+        right: 0;
+      }
+      .banner-2-tending-card {
+        width: 332px;
+        height: 308px;
+        background: $main-blue;
+        box-shadow: 15px 15px 30px #253fcc, -20px -20px 60px #4360fa;
+        border-radius: 8.08399px;
+        position: absolute;
+        bottom: 45px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p {
+          color: white;
+          font-family: "Montserrat";
+          font-size: 22px;
+          line-height: 28px;
+        }
+        .banner-2-card-title {
+          margin-top: 20px;
+          font-weight: 600;
+        }
+        .banner-2-card-content {
+          font-weight: normal;
+        }
+        .tending-img {
+          position: absolute;
+          left: -15px;
+          top: -20px;
+        }
+      }
+    }
+    .banner-dell-container {
+      width: 50%;
+      .banner-dell-img {
+        margin: auto;
+      }
+      .individual-dell {
+        display: none;
+      }
+    }
+    @media (max-width: 1440px) {
+      .slider-contents {
+        .banner-2-slider-contents {
+          padding-left: 100px;
+        }
+        h1 {
+          font-size: 50px;
+          line-height: 60px;
+        }
+        p {
+          font-size: 28px;
+          line-height: 34px;
+        }
+      }
+      .slider-banner-img {
+        .banner-1-img {
+          width: 350px;
+        }
+        .banner-2-tending-card {
+          bottom: 33px;
+        }
+      }
+    }
+    @media (max-width: 1200px) {
+      .slider-contents {
+        width: calc(100% - 350px);
+        max-width: 420px;
+        .banner-2-slider-contents {
+          padding-left: 75px;
+        }
+        h1 {
+          font-size: 40px;
+          line-height: 50px;
+        }
+        p {
+          font-size: 24px;
+          line-height: 30px;
+        }
+        button {
+          width: 180px;
+          height: 45px;
+          font-size: 15px;
+        }
+      }
+      .banner-dell-container {
+        .banner-dell-img {
+          width: 500px;
+        }
+      }
+    }
+    @media (max-width: 960px) {
+      .slider-banner-img {
+        .banner-2-tending-card {
+          width: 250px;
+          height: 250px;
+          box-shadow: 5px 5px 10px #253fcc, -20px -20px 60px #4360fa;
+          bottom: 65px;
+          .banner-2-laptop {
+            width: 150px;
+          }
+          p {
+            font-size: 18px;
+            line-height: 24px;
+          }
+          .tending-img {
+            width: 80px;
+            left: -10px;
+            top: -10px;
+          }
+        }
+      }
+      .banner-dell-container {
+        .banner-dell-img {
+          width: 415px;
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      .slider-contents {
+        width: calc(100% - 200px);
+        .banner-2-slider-contents {
+          padding-left: 50px;
+        }
+        h1 {
+          font-size: 5vw;
+          line-height: 5.5vw;
+        }
+        p {
+          font-size: 3vw;
+          line-height: 3.5vw;
+        }
+        button {
+          width: 160px;
+          height: 40px;
+          font-size: 13px;
+          margin-top: 15px;
+        }
+      }
+      .slider-banner-img {
+        .banner-1-img {
+          width: 200px;
+        }
+        .banner-2-tending-card {
+          width: 180px;
+          height: 180px;
+          box-shadow: -5px 5px 10px #253fcc, -20px -20px 60px #4360fa;
+          bottom: 20px;
+          .banner-2-laptop {
+            width: 110px;
+          }
+          .banner-2-card-title {
+            margin-top: 10px;
+          }
+          p {
+            font-size: 14px;
+            line-height: 20px;
+          }
+          .tending-img {
+            width: 60px;
+          }
+        }
+      }
+      .banner-dell-container {
+        .banner-dell-img {
+          width: 200px;
+        }
+        .comb-dell-img {
+          display: none;
+        }
+        .individual-dell {
+          display: block;
+        }
+      }
+    }
+    @media (max-width: 500px) {
+      .slider-contents {
+        width: calc(100% - 150px);
+        .banner-2-slider-contents {
+          padding-left: 25px;
+        }
+        button {
+          width: 100px;
+          height: 30px;
+          font-size: 11px;
+        }
+      }
+      .slider-banner-img {
+        .banner-1-img {
+          width: 150px;
+          bottom: 40px;
+        }
+        .banner-2-tending-card {
+          width: 140px;
+          height: 140px;
+          bottom: 40px;
+          .banner-2-laptop {
+            width: 90px;
+          }
+          p {
+            font-size: 12px;
+            line-height: 18px;
+          }
+          .tending-img {
+            width: 50px;
+          }
+        }
+      }
+      .banner-dell-container {
+        .banner-dell-img {
+          width: 160px;
+        }
+      }
+    }
+    @media (max-width: 360px) {
+      .slider-contents {
+        .banner-2-slider-contents {
+          padding-left: 0px;
+        }
+      }
+      .slider-banner-img {
+        .banner-1-img {
+          width: 130px;
+          bottom: 0px;
+        }
+        .banner-2-tending-card {
+          width: 120px;
+          height: 120px;
+          bottom: 15px;
+          .banner-2-laptop {
+            width: 75px;
+          }
+          p {
+            font-size: 10px;
+            line-height: 15px;
+          }
+          .tending-img {
+            width: 38px;
+            left: -5px;
+            top: -5px;
+          }
+        }
+      }
+      .banner-dell-container {
+        .banner-dell-img {
+          width: 115px;
+        }
+      }
+    }
+  }
+}
+
+.looking-for-container {
+  width: calc(100% - 50px);
+  max-width: 1440px;
+  margin: auto;
+  padding: 30px 0;
+  h3 {
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 26px;
+    color: black;
+    @media (max-width: 600px) {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    @media (max-width: 360px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  .looking-for-cards {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & > div {
+      padding: 15px 0;
+      width: 49%;
+      @media (max-width: 1200px) {
+        padding: 10px 0;
+      }
+      @media (max-width: 768px) {
+        padding: 5px 0;
+      }
+    }
+    .looking-vertical {
+      width: 32%;
+      @media (max-width: 768px) {
+        width: 49%;
+      }
+      @media (max-width: 425px) {
+        width: 100%;
+      }
+    }
+    .looking-horizontal {
+      width: 49%;
+      @media (max-width: 425px) {
+        width: 100%;
+      }
+    }
+  }
+}
