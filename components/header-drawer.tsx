@@ -25,7 +25,6 @@ const HeaderDrawer = () => {
   const [state, setState] = useState({
     right: false,
   })
-  const [openModal, setOpenModal] = useState(false)
   const [menuStep, setMenuStep] = useState(0)
   const [itemType, setItemType] = useState<DrawerItemType>("popular")
   const [shopIndex, setShopIndex] = useState(0)
